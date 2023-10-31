@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>AS1 Formulário</title>
+</head>
+<body>
+
+    <div class="conteiner">
+        <a href="/index.html" class="icone-fechar"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+        <div class="conteudo-conteiner">
+            <!-- TÍTULO: CONTEINER -->
+            <h2>Registrar</h2>
+
+            <!-- INÍCIO: FORMULÁRIO-REGISTRO -->
+            <form method="get" id="form" action="formAction.html">
+
+                <!-- FORMULÁRIO CAMPO: NOME -->
+                <div class="form-campo">
+                    <label for="nome">Nome Completo:</label>
+                    <span class="icone"><i class="fa fa-user" aria-hidden="true"></i></span>
+                    <input type="text" name="Nome" id="nome" title="ex: nome sobrenome (8-50 caracteres)" autocomplete="name" required>
+                </div>
+                
+                <!-- FORMULÁRIO CAMPO: EMAIL -->
+                <div class="form-campo">
+                    <label for="email">Email:</label>
+                    <span class="icone"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    <input type="email" name="Email" id="email" title="ex: nome@email.com" autocomplete="email" required>
+                </div>
+
+                <!-- FORMULÁRIO CAMPO: TELEFONE -->
+                <div class="form-campo">
+                    <label for="telefone">Telefone:</label>
+                    <span class="icone"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <input type="tel" name="Telefone" id="telefone" title="ex: (xx) xxxxx-xxxx" autocomplete="tel" required>
+                </div>
+                
+                <!-- FORMULÁRIO CAMPO: DATA NASCIMENTO -->
+                <div class="form-campo">
+                    <label for="dt-nasc">Data de Nascimento:</label>
+                    <span class="icone"><i class="fa fa-birthday-cake" aria-hidden="true"></i></span>
+                    <input type="text" name="Dt.Nascimento" id="dt-nasc" title="ex: dd/mm/aaaa" required>
+                </div>
+
+                <!-- FORMULÁRIO CHECKBOX: TERMOS E CONDIÇÕES -->
+                <div class="form-termos">
+                    <label><input type="checkbox" name="agree-term" id="agree-term" required />Eu concordo com os <a href="#" class="term-service"><b>termos & condições</b></a></label>
+                </div>
+
+                <!-- FORMULÁRIO BOTÃO: SUBMIT -->
+                <div class="form-campo form-botao">
+                    <button type="submit" class="form-botao" id="submit-botao">Enviar</button>
+                </div>
+
+                <!-- FORMULÁRIO BOTÃO: RESET -->
+                <div class="form-campo form-botao">
+                    <button type="reset" class="form-botao">Limpar</button>
+                </div>
+
+            </form>
+            <!-- FIM: FORMULÁRIO-REGISTRO -->
+
+        </div>
+
+    </div>
+
+    <script src="scripts/form.js"></script>
+    <script src="scripts/header.js"></script>
+</body>
+</html>
