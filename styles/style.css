@@ -39,6 +39,7 @@ body {
 }
 
 .conteiner {
+    top: 50px;
     position: relative;
     width: 440px;
     height: 520px;
@@ -95,8 +96,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 800px;
-    height: 440px;
+    width: 820px;
+    height: 520px;
     user-select: text;
 }
 
