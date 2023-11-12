@@ -6,6 +6,9 @@ let isTelefoneValido = false;
 let isDtNascValido = false;
 let isTermosValido = false;
 
+const corVerde = "#1e501e"
+const corVermelho = "#a91818"
+
 // FUNÇÃO - VALIDAR CAMPO NOME:
 document.addEventListener('DOMContentLoaded', function() {
     const campoNome = document.getElementById('nome');
@@ -29,10 +32,10 @@ document.addEventListener('DOMContentLoaded', function() {
     campoNome.addEventListener('blur', function(event) {
         isNomeValido = campoNomeValidacao(event);
         if (isNomeValido) {
-            event.target.style.color = 'green'; // Define a cor do texto como verde
+            event.target.style.color = corVerde; // Define a cor do texto como verde
             console.log('isNomeValido = ', isNomeValido);
         } else {
-            event.target.style.color = 'red'; // Define a cor do texto como vermelho
+            event.target.style.color = corVermelho; // Define a cor do texto como vermelho
         }
     });
 });
@@ -62,10 +65,10 @@ document.addEventListener('DOMContentLoaded', function() {
     campoEmail.addEventListener('blur', function (event) {
         isEmailValido = campoEmailValidacao(event);
         if (isEmailValido) {
-            event.target.style.color = 'green'; // Define a cor do texto como verde
+            event.target.style.color = corVerde; // Define a cor do texto como verde
             console.log('isEmailValido = ', isEmailValido);
         } else {
-            event.target.style.color = 'red'; // Define a cor do texto como vermelho
+            event.target.style.color = corVermelho; // Define a cor do texto como vermelho
         }
     });
 });
@@ -107,10 +110,10 @@ document.addEventListener('DOMContentLoaded', function() {
     campoTelefone.addEventListener('blur', function(event){
         isTelefoneValido = campoTelefoneValidacao(event.target);
         if (isTelefoneValido){
-            event.target.style.color = 'green'; // Define a cor do texto como verde
+            event.target.style.color = corVerde; // Define a cor do texto como verde
             console.log('isTelefoneValido = ', isTelefoneValido);
         } else {
-            event.target.style.color = 'red'; // Define a cor do texto como vermelho
+            event.target.style.color = corVermelho; // Define a cor do texto como vermelho
         }
     });
 });
@@ -156,10 +159,10 @@ document.addEventListener('DOMContentLoaded', function(){
     campoDtNascimento.addEventListener('blur', function(event){
         isDtNascValido = campoDtNascimentoValidacao(event.target);
         if (isDtNascValido){
-            event.target.style.color = 'green'; // Define a cor do texto como verde
+            event.target.style.color = corVerde; // Define a cor do texto como verde
             console.log('isDtNascValido = ', isDtNascValido);
         } else {
-            event.target.style.color = 'red'; // Define a cor do texto como vermelho
+            event.target.style.color = corVermelho; // Define a cor do texto como vermelho
         }
 
     })

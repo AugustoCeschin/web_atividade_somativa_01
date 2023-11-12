@@ -53,8 +53,6 @@ body {
     align-items: center;
     overflow: hidden;
     user-select: none;
-    transform: scale(1);
-    transition: transform .5s ease, height .2s ease;
 }
 
 .conteudo-conteiner {
@@ -92,6 +90,16 @@ body {
     background: var(--cor-terciaria);
 }
 
+
+/* INDEX DIA E HORA CSS */
+#conteudo-index{
+    text-align: center;
+    font-size: 2em;
+    color: var(--cor-terciaria);
+}
+
+
+/* ABOUT CSS */
 .conteiner.conteiner-about{
     top: 2px;
     display: flex;

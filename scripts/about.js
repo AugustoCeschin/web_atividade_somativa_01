@@ -1,34 +1,29 @@
+// Aguarda o carregamento completo do DOM antes de executar o código
 document.addEventListener("DOMContentLoaded", function () {
-    // Padrão: exibir o slide1
+    // Padrão: exibe o slide1 ao carregar a página
     exibirSlide("slide1");
 
-    // Adicionar ouvintes de evento para os botões
+    // Adiciona ouvinte de evento para o botão 1
     document.getElementById("radio1").addEventListener("change", function () {
         exibirSlide("slide1");
     });
-    // Adicionar um segundo botão e ouvinte de evento
+    // Adiciona ouvinte de evento para o botão 2
     document.getElementById("radio2").addEventListener("change", function () {
         exibirSlide("slide2");
     });
-
-    // Adicionar um terceiro botão e ouvinte de evento
-    document.getElementById("radio3").addEventListener("change", function () {
-        exibirSlide("slide3");
-    });
-
-    // Adicionar um quarto botão e ouvinte de evento
-    document.getElementById("radio4").addEventListener("change", function () {
-        exibirSlide("slide4");
-    });
 });
 
+
+// Função para exibir o slide correspondente ao botão selecionado com o parâmetro ID
 function exibirSlide(slideId) {
-    // Ocultar todos os slides
+
+    // Obtém todos os elementos com a classe "about-conteudo" (todos os slides)
     var slides = document.querySelectorAll(".about-conteudo");
+    // Oculta todos os slides, evitando sobreposição de slide
     slides.forEach(function (slide) {
         slide.style.display = "none";
     });
 
-    // Exibir o slide desejado
+    // Exibe o slide desejado
     document.getElementById(slideId).style.display = "block";
 }
